@@ -1,0 +1,8 @@
+/**
+ * This will hide the play until the removal code kicks in.
+ * It will also prevent autoplaying videos.
+ */
+
+.anvato {
+  display: none;
+}

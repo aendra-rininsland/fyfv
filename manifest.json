@@ -1,0 +1,21 @@
+{
+  "name": "FYFV",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Remove Anvato's fucking video player from fucking news articles",
+  "permissions": ["activeTab"],
+  "homepage_url": "https://www.github.com/aendrew/fyfv",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["src/inject/fyfv.css"],
+      "js": ["src/inject/fyfv.js"]
+    }
+  ]
+}
